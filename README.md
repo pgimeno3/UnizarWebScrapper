@@ -8,6 +8,10 @@ This projects requires Numpy and Pandas packages to be installed in your system.
 
 ## Plots generated
 
-An example plot can be seen in figures_examples/
+Some example plots can be seen in figures_examples/
 
-![Figure]( figures_examples/fig.png ) 
+Matricula y acceso:
+![Figure]( figures_examples/fig_matricula.png ) 
+
+Duracion media graduados:
+![Figure]( figures_examples/fig_duracion_graduados.png ) 
