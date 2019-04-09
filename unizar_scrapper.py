@@ -96,5 +96,31 @@ plt.title(titulacion)
 plt.xlabel("Curso academico")
 plt.legend(['Plazas ofertadas','Alumnos nuevo ingreso','Matriculados'])
 
-plt.savefig("figures_examples/fig.png")
+plt.savefig("figures_examples/fig_matricula.png")
 
+#Esta tabla contiene informacion sobre el numero de creditos
+#TODO
+table_parsed = next(iterate_list)
+
+#Esta tabla contiene informacion de los cursos de adaptacion
+table_parsed = next(iterate_list)
+
+#Esta lista contiene duracion media graduados
+table_parsed = next(iterate_list).replace("",0)
+labels =  table_parsed.loc[1:,0].values
+print(labels)
+duracion_media = np.array(table_parsed.loc[1:,1].values, dtype = np.float)
+
+indx = np.arange(len(duracion_media))
+
+width=0.4
+plt.figure()
+plt.bar(indx,duracion_media, width = width)
+plt.xticks(indx)
+plt.gca().set_xticklabels(labels)
+plt.title(titulacion)
+plt.xlabel("Curso academico")
+plt.ylabel("Años")
+plt.legend(["Duración media graduados"])
+
+plt.savefig("figures_examples/fig_duracion_graduados.png")
