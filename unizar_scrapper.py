@@ -94,7 +94,7 @@ plt.bar(indx,matriculados, width = width)
 plt.gca().set_xticklabels(labels)
 plt.title(titulacion)
 plt.xlabel("Curso academico")
-plt.legend(['Plazas ofertadas','Matriculados','Alumnos nuevo ingreso'])
+plt.legend(['Plazas ofertadas','Alumnos nuevo ingreso','Matriculados'])
 
-plt.savefig("fig.png")
+plt.savefig("figures_examples/fig.png")
 
