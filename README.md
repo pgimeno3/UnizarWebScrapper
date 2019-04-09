@@ -15,3 +15,6 @@ Matricula y acceso:
 
 Duracion media graduados:
 ![Figure]( figures_examples/fig_duracion_graduados.png ) 
+
+Tasas de rendimiento/exito/eficiencia:
+![Figure]( figures_examples/fig_tasas.png ) 
